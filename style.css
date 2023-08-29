@@ -1,18 +1,5 @@
-body{
-    display: flex;
-}
-.whiteBoard{
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-wrap: wrap;
-    width: 80dvh;
-    height: auto;
-    /* flex:1 1 6% */
-}
-.whiteBoard>*{
-    flex: 1 1 6%;
-    
+.board{
+    width: 500px;
+    height: 500px;
+    display: grid;
 }

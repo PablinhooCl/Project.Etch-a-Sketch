@@ -1,17 +1,23 @@
-// set f on start
-    window.onload = function(){
-        setGrid();
-    };
+// // set f on start
+//     window.onload = function(){
+//         setGrid();
+//     };
 
 
+let board= document.querySelector('.board');
+    board.style.gridTemplateColumns= 'repeat(16, 1fr)';
+    board.style.gridTemplateRows= 'repeat(16, 1fr)';
 
-
-
-
-// setting the div s 16x16
-    function setGrid(){
-        for(let i= 0; i<256; i++){
-            var div = document.createElement("div");
-        document.getElementById("main").appendChild(div);
-          }
-    }
+let div = document.createElement("div");
+for(let i= 0; i<256; i++){
+    
+    document.getElementById("main").appendChild(div);
+    div.classList.add("draw")
+    ;
+  }
+  pen= document.getElementsByClassName('draw');
+  pen.addEventListener(
+    "mouseenter",
+    (event) => {
+    div.style.backgroundColor= 'blue'    
+    });
