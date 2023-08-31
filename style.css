@@ -1,5 +1,27 @@
-.board{
-    width: 500px;
-    height: 500px;
-    display: grid;
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 }
+.board{
+    width: 900px;
+    height: 750px;
+    border-style: solid;
+    display: grid;
+    margin: 20px;
+    
+}
+.buttonPen{
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+}
+.inputSize{
+    margin: 10px;
+}
+.size{
+    margin:10px;
+}
+color: 

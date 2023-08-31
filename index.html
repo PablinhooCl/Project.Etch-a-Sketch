@@ -8,6 +8,16 @@
 </head>
 <body>
     <div class="board" id="main"></div>
-</body>
+    <div class="buttonContainer">
+        <button class="buttonPen black" onclick="colorChanger('black')">Black</button>
+        <button class="buttonPen eraser" onclick="colorChanger('white')">Eraser</button>
+        <button class="buttonPen color" onclick="colorChanger('random')">Random Color</button>
+        <button class="buttonPen color" onclick="resetBoard()">Reset</button>
+        <button class="buttonPen color" onclick="blackBoard()">All black</button>
+    </div>
+    <div class="inputSize">Size of board: 
+        <input type="text" placeholder="Size of board" value="16" onchange="boardSize(this.value)">
+        <button class="size">Confirm</button>
+    </div>
 <script src="code.js"></script>
 </html>
